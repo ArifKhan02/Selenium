@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EcommerceProject" parallel="tests" thread-count="2">
+	<listeners>
+				<listener class-name='com.ecom.Utilities.Reporting'/>
+	</listeners>
+	<test name="loginTest">
+
+
+		<parameter name="Browser" value="chrome" />
+		<classes>
+
+			<class name="com.ecom.testCases.TC_LogintTest_001" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
